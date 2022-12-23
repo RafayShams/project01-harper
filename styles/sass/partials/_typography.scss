@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Oswald:wght@700&display=swap');
+
+@mixin typography($size, $height, $spacing: 1, $weight: bold, $align: left) {
+  font-size: $size * 1px;
+  font-size: calc($size / 20) * 1rem;
+  color: $textColor;
+  line-height: $height * 1px;
+  letter-spacing: $spacing * 1px;
+  font-weight: $weight;
+  text-align: $align;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 125%;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+  @include typography(80, 92);
+}
+
+h2,
+.logo {
+  @include typography(42, 50);
+}
+
+h3 {
+  @include typography(32, 38);
+}
+
+h4 {
+  @include typography(24, 29);
+}
+
+button,
+a.button {
+  @include typography(20, 32, 1, bold, center);
+}
+
+nav a {
+  @include typography(20, 29, 1, bold, right);
+}
+
+p,
+.skipLink,
+input::placeholder,
+address,
+textarea::placeholder,
+aside li {
+  @include typography(20, 32, 0, regular);
+  font-family: 'Cabin', sans-serif;
+  text-transform: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1;
+}
+
+address {
+  font-style: normal;
+}
