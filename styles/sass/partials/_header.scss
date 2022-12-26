@@ -1,0 +1,33 @@
+// HOME PAGE HEADER STYLES
+.homeHead {
+  background-color: $tertiary;
+  height: 100vh;
+  padding-top: 50px;
+  h1 {
+    font-size: 7rem;
+    line-height: normal;
+    position: relative;
+    bottom: 50px;
+    left: 75px;
+    &::after {
+      content: url(../assets/circle-text.png);
+      position: absolute;
+      right: -50px;
+      bottom: 25px;
+    }
+  }
+  .headerImgContainer {
+    width: 40%;
+  }
+  img {
+    box-shadow: 20px 20px white;
+  }
+}
+
+.headerFlex {
+  display: flex;
+  align-items: center;
+}
+// * {
+//   border: 1px solid red;
+// }

@@ -1,0 +1,36 @@
+// SKIP LINK STYLES
+.skipLink {
+  padding: 10px;
+  background-color: $quaternary;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 999; 
+  left: -100%;
+  outline: solid 2px $secondary;
+  &:focus {
+    left: 0;
+  }
+}
+
+// NAV BAR STYLES
+.mainNav{
+  width: 100%;
+  padding: 10px;
+  background-color: $tertiary;
+  ul {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+  a {
+    // transition: 0.3s;
+    &:hover,
+    &:focus {
+      color: $quaternary;
+      outline: solid 2px $primary;
+    }
+  }
+}

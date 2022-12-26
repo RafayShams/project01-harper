@@ -1,0 +1,38 @@
+.wrapper {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+button,
+a.button {
+  background-color: $buttonColor;
+  border: none;
+  display: inline-block;
+  padding: 10px 25px;
+  transition: 0.3s;
+  &:hover,
+  &:focus {
+    background-color: $secondary;
+    cursor: pointer;
+    outline: none;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
