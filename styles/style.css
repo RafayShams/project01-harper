@@ -627,12 +627,20 @@ img {
   padding-left: 100px;
 }
 .blogFlex .blogText2 {
-  padding-right: 100px;
-  position: relative;
+  padding: 30px 100px 0 0;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .blogFlex .blogText2 a {
-  position: absolute;
-  right: 100px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 .blogFlex .blogImage1 img {
   -webkit-box-shadow: 20px 20px #68b0c1, -300px 20px #68b0c1;
@@ -645,4 +653,50 @@ img {
           box-shadow: 15px 20px #b9dde7, 300px 20px #b9dde7;
   position: relative;
   top: 30px;
+}
+
+.journey {
+  padding: 150px 0;
+}
+
+.journeyFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.journeyFlex .journeyText {
+  width: 65%;
+}
+.journeyFlex p {
+  padding: 20px 0;
+}
+.journeyFlex img {
+  -webkit-box-shadow: 15px 15px #227284;
+          box-shadow: 15px 15px #227284;
+}
+
+.gallery {
+  padding: 100px 0;
+}
+.gallery ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+}
+.gallery ul li {
+  width: 33.3333333333%;
+}
+
+footer {
+  background-color: #171717;
+}
+footer p {
+  color: white;
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 5px 0;
 }

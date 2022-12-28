@@ -99,12 +99,13 @@
   }
   
   .blogText2 {
-    padding-right: 100px;
-    position: relative;
+    padding: 30px 100px 0 0;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
     
     a {
-      position: absolute;
-      right: 100px;
+      align-self: flex-end;
     }
   }
   
@@ -122,5 +123,41 @@
       300px 20px $tertiary;
     position: relative;
     top: 30px;
+  }
+}
+
+// HARPER'S JOURNEY SECTION
+.journey {
+  padding: 150px 0;
+}
+
+.journeyFlex {
+  display: flex;
+  justify-content: space-between;
+  
+  .journeyText {
+    width: 65%;
+  }
+  
+  p {
+    padding: 20px 0;
+  }
+
+  img {
+    box-shadow: 15px 15px $secondary;
+  }
+}
+
+// GALLERY SECTION
+.gallery {
+  padding: 100px 0;
+ 
+  ul {
+  display: flex;
+  gap: 40px;
+  
+    li {
+      width: calc(100% / 3);
+    }
   }
 }
