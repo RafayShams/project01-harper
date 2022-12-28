@@ -1,0 +1,126 @@
+// GENERAL SECTION STYLES
+.about,
+.links,
+.journey,
+.blogPage,
+.contactPage {
+  background-color: $quaternary;
+  padding: 100px 0;
+}
+
+// HOME PAGE STYLES
+
+// WHO'S HARPER SECTION SYTLES
+.about {
+  padding-top: 110px;
+
+  .wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .aboutContainer {
+    width: 53%;
+
+    p {
+      padding: 25px 0;
+    }
+  }
+}
+
+// FILLER SECTION STYLES
+.filler {
+  height: 80vh;
+  background-image: url("../assets/home-image-2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+// LINK SECTION STYLES
+.linksList {
+  display: flex;
+  flex-wrap: wrap;
+  
+  li {
+    width: 50%;
+    
+    h3::before {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 2px 15px;
+      background-position: center;
+      background: $tertiary;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+    
+    .linkPhotos::before {
+      content: url("../assets/image.svg");
+    }
+    
+    .linkAbout::before {
+      content: url("../assets/user.svg");
+    }
+    
+    .linkBlog::before {
+      content: url("../assets/desktop.svg");
+    }
+    
+    .linkContact::before {
+      content: url("../assets/phone.svg");
+      transform: rotate(270deg);
+    }
+    
+    p {
+      padding: 20px 30px 50px 75px;
+    }
+  }
+}
+
+// BLOG SECTION STYLES
+.blogFlex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  
+  .blogImageContainer,
+  .blogTextContainer {
+    width: 50%;
+  }
+  
+  .blogTextContainer p {
+    padding: 25px 0;
+  }
+  
+  .blogText1{
+    padding-left: 100px;
+  }
+  
+  .blogText2 {
+    padding-right: 100px;
+    position: relative;
+    
+    a {
+      position: absolute;
+      right: 100px;
+    }
+  }
+  
+  .blogImage1 img {
+    box-shadow: 
+      20px 20px $primary, 
+      -300px 20px $primary;
+    position: relative;
+    bottom: 50px;
+  }
+  
+  .blogImage2 img {
+    box-shadow: 
+      15px 20px $tertiary, 
+      300px 20px $tertiary;
+    position: relative;
+    top: 30px;
+  }
+}

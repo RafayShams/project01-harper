@@ -9,6 +9,7 @@
   z-index: 999; 
   left: -100%;
   outline: solid 2px $secondary;
+  
   &:focus {
     left: 0;
   }
@@ -19,14 +20,16 @@
   width: 100%;
   padding: 10px;
   background-color: $tertiary;
+  
   ul {
     display: flex;
     gap: 50px;
     justify-content: center;
     align-items: center;
   }
+  
   a {
-    // transition: 0.3s;
+    
     &:hover,
     &:focus {
       color: $quaternary;

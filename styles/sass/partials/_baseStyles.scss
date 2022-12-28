@@ -1,5 +1,5 @@
 .wrapper {
-  width: 90%;
+  width: 85%;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -9,8 +9,9 @@ a.button {
   background-color: $buttonColor;
   border: none;
   display: inline-block;
-  padding: 10px 25px;
+  padding: 5px 30px;
   transition: 0.3s;
+  
   &:hover,
   &:focus {
     background-color: $secondary;
