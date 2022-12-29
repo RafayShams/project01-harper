@@ -533,6 +533,18 @@ img {
           align-items: center;
 }
 
+.blogHead {
+  height: 50vh;
+  background: url("../assets/blog-image-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+.blogHead h1 {
+  position: absolute;
+  bottom: -35px;
+}
+
 .about,
 .links,
 .journey,
@@ -689,6 +701,75 @@ img {
 }
 .gallery ul li {
   width: 33.3333333333%;
+}
+
+.blogPageFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+}
+.blogPageFlex aside {
+  width: 30%;
+}
+.blogPageFlex aside div {
+  background-color: white;
+}
+.blogPageFlex aside .aboutHarper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+.blogPageFlex aside .recent {
+  padding: 30px;
+}
+.blogPageFlex aside .recentList {
+  list-style-type: disc;
+  margin: 20px 0 20px 25px;
+}
+.blogPageFlex aside .recentList li {
+  padding-left: 15px;
+}
+.blogPageFlex aside .recentList li::marker {
+  font-size: 0.6rem;
+}
+.blogPageFlex main {
+  width: 70%;
+}
+.blogPageFlex main h3 {
+  margin-bottom: 15px;
+}
+.blogPageFlex main p {
+  padding: 5px 0;
+}
+.blogPageFlex .travel,
+.blogPageFlex .comment {
+  background-color: white;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+.blogPageFlex .travel,
+.blogPageFlex .comment2 {
+  border-bottom: 5px solid #227284;
+}
+.blogPageFlex .comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.blogPageFlex .commentImgContainer {
+  width: 13%;
+}
+.blogPageFlex .commentTextContainer {
+  width: 87%;
+  margin-left: 20px;
 }
 
 footer {

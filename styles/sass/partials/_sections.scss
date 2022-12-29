@@ -161,3 +161,77 @@
     }
   }
 }
+
+// BLOG PAGE STYLES
+.blogPageFlex {
+  display: flex;    
+  gap: 40px;
+  
+  aside {
+    width: 30%;
+
+    div {
+      background-color: white;
+    }
+
+  .aboutHarper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+    margin-bottom: 20px;
+  }
+
+  .recent {
+    padding: 30px;
+  }
+
+  .recentList {
+    list-style-type: disc;
+    margin: 20px 0 20px 25px;
+
+    li {
+      padding-left: 15px;
+
+      &::marker {
+        font-size: 0.6rem;
+      }
+    }
+  }
+  }
+
+  main {
+    width: 70%;
+
+    h3 {
+      margin-bottom: 15px;
+    }
+    p {
+      padding: 5px 0;
+    }
+  }
+
+  .travel,
+  .comment {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 20px;
+  }
+
+  .travel,
+  .comment2 {
+    border-bottom: 5px solid $secondary;
+  }
+
+  .comment {
+    display: flex;
+  }
+
+  .commentImgContainer {
+    width: 13%;
+  }
+  .commentTextContainer {
+    width: 87%;
+    margin-left: 20px;
+  }
+}

@@ -29,29 +29,30 @@
     </div>
   </header>
   <div class="blogPage"> <!-- DIV FOR CONTENT BETWEEN HEADER AND FOOTER -->
-    <div class="wrapper blogFlex" >    <!-- WRAPPER START -->
+    <div class="wrapper blogPageFlex" > <!-- WRAPPER START -->
 
       <!-- ASIDE START -->
       <aside class="blogAside">
         <div class="aboutHarper">
           <img src="./assets/blog-image-2.jpg" alt="girl lying down on carpter with eyes closed">
           <h4>about harper</h4>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam nostrum ex repellendus consectetur, voluptatibus eum. Find out more.</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Find out more.</p>
         </div>
         <div class="recent">
           <h4>Recent posts</h4>
           <ul class="recentList">
-            <li>Quisquam eos consectetur laborum</li>
+            <li>Quisquam eos consectetur</li>
             <li>Possimus quis delectus alias</li>
             <li>Vitae tempora maiores sed</li>
-            <li>Quam quidem aliquid minus</li>
+            <li>Quam quidem aliquid</li>
           </ul>
         </div>
       </aside>
+
       <!-- MAIN START -->
       <main id="mainContent" class="blogMain">
         <section class="travel">   <!-- TRAVEL POST -->
-          <h2>My favourite travel destinations</h2>
+          <h3>My favourite travel destinations</h3>
           <p><time datetime="2018-10-08">Monday October 8th, 2018</time> by Harper</p>
 
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur accusamus maiores tenetur corporis doloribus, commodi mollitia, neque numquam aliquid pariatur illum? Blanditiis nulla, distinctio repellendus repellat quisquam consequatur velit qui nostrum alias veritatis nisi voluptatibus.</p>
@@ -63,17 +64,25 @@
         </section> <!-- TRAVEL POST END-->
 
         <!-- COMMENTS SECTION -->
-        <section class="comment comment1">
-          <div class="comment1">
-            <img src="./assets/blog-image-3.jpg" alt="Maggies profile pic">
-            <p><time datetime="2018-10-09">Tuesday October 9th, 2018</time> by Maggie</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis necessitatibus libero porro dolorum illo architecto recusandae optio, rem veniam velit voluptates perspiciatis! Velit cumque in ducimus maiores, eos non itaque officia consequuntur quisquam quia! Aliquam quae quia assumenda dolorem quos?</p>
+        <section class="comments">
+          <div class="comment comment1">
+            <div class="commentImgContainer">
+              <img src="./assets/blog-image-3.jpg" alt="Maggies profile pic">
+            </div>
+            <div class="commentTextContainer">
+              <p><time datetime="2018-10-09">Tuesday October 9th, 2018</time> by Maggie</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis necessitatibus libero porro dolorum illo architecto recusandae optio, rem veniam velit voluptates perspiciatis! Velit cumque in ducimus maiores, eos non itaque officia consequuntur quisquam quia! Aliquam quae quia assumenda dolorem quos?</p>
+            </div>
           </div>
 
           <div class="comment comment2">
-            <img src="./assets/blog-image-4.jpg" alt="Daisys profile pic">
-            <p><time datetime="2018-10-10">Wednesday October 10th, 2018</time> by Daisy</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus illo deleniti a quod sit amet cum debitis nulla enim, nam quos voluptas et soluta voluptate porro repellat voluptatem odio dolorem.</p>
+            <div class="commentImgContainer">
+              <img src="./assets/blog-image-4.jpg" alt="Daisys profile pic">
+            </div>
+            <div class="commentTextContainer">
+              <p><time datetime="2018-10-10">Wednesday October 10th, 2018</time> by Daisy</p>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus illo deleniti a quod sit amet cum debitis nulla enim, nam quos voluptas et soluta voluptate porro repellat voluptatem odio dolorem.</p>
+            </div>
           </div>
         </section> <!-- COMMENTS SECTION END -->
 
