@@ -1,0 +1,27 @@
+form {
+  display: flex;
+  flex-direction: column;
+
+  .nameEmail {
+    display: flex;
+    gap: 10px;
+  }
+
+  input {
+    border: none;
+    padding: 25px;
+    width: 50%;
+  }
+
+  textarea {
+    border: none;
+    margin: 20px 0;
+    padding: 25px;
+    height: 250px;
+    resize: none;
+  }
+
+  button {
+    font-family: inherit;
+  }
+}
