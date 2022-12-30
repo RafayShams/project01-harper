@@ -235,3 +235,35 @@
     margin-left: 20px;
   }
 }
+
+// CONTACT PAGE STYLES
+.contactFlex {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+
+  aside {
+    width: 30%;
+    background-color: white;
+    padding: 50px 30px;
+  }
+
+  main {
+    width: 70%;
+  }
+
+  .socialIcons {
+    display: flex;
+    gap: 30px;
+    i {
+      color: $secondary;
+      font-size: 1.3rem;
+    }
+  }
+
+  .infoEmail {
+    font-weight: bold;
+    margin: 20px 0;
+    font-family: inherit;
+  }
+}

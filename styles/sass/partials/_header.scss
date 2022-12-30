@@ -47,3 +47,17 @@
     bottom: -35px;
   }
 }
+
+// CONTACT PAGE HEADER
+.contactHead {
+  height: 50vh;
+  background: url("../assets/contact-image-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+
+  h1 {
+      position: absolute;
+      bottom: -35px;
+    }
+}
