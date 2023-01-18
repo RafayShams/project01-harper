@@ -2,6 +2,7 @@
 .homeHead {
   background-color: $tertiary;
   height: 100vh;
+  max-height: 650px;
   padding-top: 50px;
   
   h1 {
@@ -21,6 +22,7 @@
   
   .headerImgContainer {
     width: 40%;
+    min-width: 450px;
   }
   
   img {

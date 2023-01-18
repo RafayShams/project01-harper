@@ -495,12 +495,12 @@ img {
 }
 .mainNav a:hover, .mainNav a:focus {
   color: #f6f6f6;
-  outline: solid 2px #68b0c1;
 }
 
 .homeHead {
   background-color: #b9dde7;
   height: 100vh;
+  max-height: 650px;
   padding-top: 50px;
 }
 .homeHead h1 {
@@ -518,6 +518,7 @@ img {
 }
 .homeHead .headerImgContainer {
   width: 40%;
+  min-width: 450px;
 }
 .homeHead img {
   -webkit-box-shadow: 20px 20px white;
@@ -650,6 +651,9 @@ img {
 .blogFlex .blogText1 {
   padding-left: 100px;
 }
+.blogFlex .blogText1 h3 {
+  padding-top: 50px;
+}
 .blogFlex .blogText2 {
   padding: 30px 100px 0 0;
   -ms-flex-item-align: start;
@@ -665,6 +669,7 @@ img {
 .blogFlex .blogText2 a {
   -ms-flex-item-align: end;
       align-self: flex-end;
+  margin-bottom: 50px;
 }
 .blogFlex .blogImage1 img {
   -webkit-box-shadow: 20px 20px #68b0c1, -300px 20px #68b0c1;
@@ -856,4 +861,256 @@ form textarea {
 }
 form button {
   font-family: inherit;
+}
+
+@media (max-width: 1200px) {
+  .homeHead h1 {
+    font-size: 6rem;
+  }
+  .homeHead h1::after {
+    bottom: 5px;
+  }
+  .homeHead .headerImgContainer {
+    width: 45%;
+  }
+  .journeyFlex .journeyText {
+    width: 60%;
+  }
+}
+@media (max-width: 1070px) {
+  .wrapper {
+    width: 95%;
+  }
+  .homeHead h1 {
+    font-size: 5rem;
+    left: 50px;
+  }
+  .homeHead h1::after {
+    bottom: -5px;
+    right: -60px;
+  }
+  .homeHead .headerImgContainer {
+    width: 45%;
+  }
+  .about .aboutContainer {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about .aboutContainer a,
+.about .aboutContainer h2 {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+}
+@media (max-width: 940px) {
+  .homeHead h1 {
+    font-size: 4rem;
+    left: 40px;
+  }
+  .homeHead h1::after {
+    bottom: -5px;
+    right: -60px;
+  }
+  .homeHead .headerImgContainer {
+    width: 50%;
+  }
+  .blogFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blogFlex .blogImageContainer,
+.blogFlex .blogTextContainer {
+    width: 100%;
+  }
+  .blogFlex .blogText1 {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    padding: 0 0 50px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blogFlex .blogText1 a,
+.blogFlex .blogText1 h3 {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .blogFlex .blogText2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 50px 0;
+  }
+  .blogFlex .blogText2 a,
+.blogFlex .blogText2 h3 {
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin: 0;
+  }
+  .blogFlex .blogImage1 img,
+.blogFlex .blogImage2 img {
+    position: static;
+  }
+  .blogFlex .blogImage1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .journey {
+    padding: 150px 0 0 0;
+  }
+  .journeyFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .journeyFlex .journeyText {
+    width: 100%;
+    padding: 50px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .journeyFlex .journeyText a,
+.journeyFlex .journeyText h2 {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .journeyFlex .journeyImageContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (max-width: 860px) {
+  .homeHead h1 {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    left: 0;
+    bottom: 0;
+  }
+  .homeHead h1::after {
+    font-size: 1rem;
+  }
+  .homeHead .headerImgContainer {
+    width: 50%;
+    min-width: 350px;
+  }
+  .headerFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .linksList {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .linksList li {
+    width: 100%;
+  }
+  .linksList li h3 {
+    text-align: center;
+  }
+  .linksList li p {
+    padding: 40px 0;
+  }
+  .gallery ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .gallery ul li {
+    width: 100%;
+  }
+  .gallery ul li img {
+    margin: 0 auto;
+  }
+  .blogPageFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blogPageFlex aside {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20px;
+  }
+  .blogPageFlex .recent {
+    width: 65%;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .blogPageFlex main {
+    width: 100%;
+  }
+  .contactFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactFlex main {
+    width: 100%;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .contactFlex aside {
+    width: 320px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 650px) {
+  .mainNav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+  }
+  .blogPageFlex aside {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blogPageFlex .recent {
+    width: 100%;
+  }
 }

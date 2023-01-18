@@ -1,0 +1,239 @@
+@media (max-width: 1200px) {
+  .homeHead {
+    h1 {
+        font-size: 6rem;
+        &::after {
+          bottom: 5px;
+        }
+      }
+  .headerImgContainer {
+    width: 45%;
+  }    
+  }
+  .journeyFlex {
+    .journeyText {
+      width: 60%;
+    }
+  }
+}
+
+@media (max-width: 1070px) {
+  .wrapper {
+    width: 95%;
+  }
+  .homeHead {
+      h1 {
+        font-size: 5rem;
+        left: 50px;
+  
+        &::after {
+          bottom: -5px;
+          right: -60px; 
+        }
+      }
+  
+      .headerImgContainer {
+        width: 45%;
+      }
+    }
+
+    .about {
+      .aboutContainer {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          a,
+          h2 {
+            align-self: center;
+          }
+    }
+  }
+}
+
+@media (max-width: 940px) {
+  .homeHead {
+      h1 {
+        font-size: 4rem;
+        left: 40px;
+  
+        &::after {
+          bottom: -5px;
+          right: -60px;
+        }
+      }
+  
+      .headerImgContainer {
+        width: 50%;
+      }
+    }
+    .blogFlex {
+      flex-direction: column;
+      .blogImageContainer,
+      .blogTextContainer {
+          width: 100%;
+      }
+      
+      .blogText1 {
+        order: -1;
+        padding: 0 0 50px 0;
+        display: flex;
+        flex-direction: column;
+
+        a,
+        h3 {
+          align-self: center;
+        }
+      }
+
+      .blogText2 {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 0;
+      
+        a,
+        h3 {
+          align-self: center;
+          margin: 0;
+        }
+      }
+      .blogImage1 img,
+      .blogImage2 img {
+        position: static;
+      }
+
+      .blogImage1 {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+    .journey {
+      padding: 150px 0 0 0;
+    }
+    .journeyFlex {
+      flex-direction: column;
+
+      .journeyText {
+        width: 100%;
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column;
+
+        a,
+        h2 {
+          align-self: center;
+        }
+      }
+
+      .journeyImageContainer {
+        display: flex;
+        justify-content: center;
+      }
+      
+    }
+}
+
+@media (max-width: 860px) {
+  .homeHead {
+    h1 {
+      order: -1;
+      left: 0;
+      bottom: 0;
+
+      &::after {
+        font-size: 1rem;
+      }
+    }
+
+    .headerImgContainer {
+      width: 50%;
+      min-width: 350px;
+    }
+  }
+  .headerFlex {
+    flex-direction: column;
+  }
+
+  .linksList {
+    flex-direction: column;
+
+    li {
+      width: 100%; 
+
+      h3 {
+        text-align: center;
+      }
+
+      p {
+        padding: 40px 0;
+      }
+    }
+  }
+
+  .gallery {
+    
+    ul {
+      flex-direction: column;
+
+      li {
+        width: 100%;
+
+        img {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+  
+  .blogPageFlex {
+    flex-direction: column;
+
+    aside {
+      width: 100%;
+      display: flex;
+      gap: 20px;
+    }
+
+    .recent {
+      width: 65%;
+      align-self: flex-start;
+    }
+
+    main {
+      width: 100%;
+    }
+  }
+
+  .contactFlex {
+    flex-direction: column;
+
+    main {
+      width: 100%;
+      order: -1;
+    }
+
+    aside {
+      width: 320px;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .mainNav {
+    ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+
+  .blogPageFlex {
+    
+    aside {
+      flex-direction: column;
+    }
+
+    .recent {
+      width: 100%;
+    }
+  }
+}
