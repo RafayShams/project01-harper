@@ -158,9 +158,9 @@
  
   ul {
   display: flex;
-  gap: 40px;
   
     li {
+      margin: 0 20px;
       width: calc(100% / 3);
     }
   }
@@ -258,8 +258,8 @@
 
   .socialIcons {
     display: flex;
-    gap: 30px;
     i {
+      margin: 0 15px;
       color: $secondary;
       font-size: 1.3rem;
     }

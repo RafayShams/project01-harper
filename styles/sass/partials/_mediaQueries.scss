@@ -146,7 +146,7 @@
 
     .headerImgContainer {
       width: 50%;
-      min-width: 350px;
+      min-width: 300px;
     }
   }
   .headerFlex {
@@ -176,6 +176,7 @@
 
       li {
         width: 100%;
+        margin: 20px 0;
 
         img {
           margin: 0 auto;
@@ -219,6 +220,17 @@
 }
 
 @media (max-width: 650px) {
+  .homeHead {
+    h1 {
+      font-size: 3rem;
+      margin-top: 30px;
+
+      &::after {
+        font-size: 0.7rem;
+        left: 80px;
+      }
+    }
+  }
   .mainNav {
     ul {
       flex-direction: column;
@@ -233,6 +245,17 @@
     }
 
     .recent {
+      width: 100%;
+    }
+  }
+
+  form {
+
+    .nameEmail {
+      flex-direction: column;
+    }
+    
+    input {
       width: 100%;
     }
   }
