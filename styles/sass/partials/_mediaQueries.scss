@@ -260,3 +260,9 @@
     }
   }
 }
+
+@media (max-height: 650px) {
+  .homeHead {
+    min-height: 650px;
+  }
+}

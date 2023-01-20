@@ -1134,3 +1134,8 @@ form button {
     width: 100%;
   }
 }
+@media (max-height: 650px) {
+  .homeHead {
+    min-height: 650px;
+  }
+}
