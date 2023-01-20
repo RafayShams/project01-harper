@@ -742,9 +742,11 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 30px;
   padding: 30px;
   margin-bottom: 20px;
+}
+.blogPageFlex aside .aboutHarper h4 {
+  margin: 15px 0;
 }
 .blogPageFlex aside .recent {
   padding: 30px;

@@ -181,9 +181,12 @@
   .aboutHarper {
     display: flex;
     flex-direction: column;
-    gap: 30px;
     padding: 30px;
     margin-bottom: 20px;
+
+    h4 {
+      margin: 15px 0;
+    }
   }
 
   .recent {
