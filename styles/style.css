@@ -461,6 +461,14 @@ img {
   display: block;
 }
 
+.noDisplay {
+  display: none;
+}
+
+.blockDisplay {
+  display: block;
+}
+
 .skipLink {
   padding: 10px;
   background-color: #f6f6f6;
@@ -493,10 +501,18 @@ img {
           align-items: center;
 }
 .mainNav a {
-  margin: 0 25px;
+  margin: 0 15px;
 }
 .mainNav a:hover, .mainNav a:focus {
   color: #f6f6f6;
+}
+
+.hamburger {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
 .homeHead {
@@ -907,7 +923,7 @@ form button {
             flex-direction: column;
   }
   .about .aboutContainer a,
-.about .aboutContainer h2 {
+  .about .aboutContainer h2 {
     -ms-flex-item-align: center;
         align-self: center;
   }
@@ -931,7 +947,7 @@ form button {
             flex-direction: column;
   }
   .blogFlex .blogImageContainer,
-.blogFlex .blogTextContainer {
+  .blogFlex .blogTextContainer {
     width: 100%;
   }
   .blogFlex .blogText1 {
@@ -948,7 +964,7 @@ form button {
             flex-direction: column;
   }
   .blogFlex .blogText1 a,
-.blogFlex .blogText1 h3 {
+  .blogFlex .blogText1 h3 {
     -ms-flex-item-align: center;
         align-self: center;
   }
@@ -963,13 +979,13 @@ form button {
     padding: 50px 0;
   }
   .blogFlex .blogText2 a,
-.blogFlex .blogText2 h3 {
+  .blogFlex .blogText2 h3 {
     -ms-flex-item-align: center;
         align-self: center;
     margin: 0;
   }
   .blogFlex .blogImage1 img,
-.blogFlex .blogImage2 img {
+  .blogFlex .blogImage2 img {
     position: static;
   }
   .blogFlex .blogImage1 {
@@ -1001,7 +1017,7 @@ form button {
             flex-direction: column;
   }
   .journeyFlex .journeyText a,
-.journeyFlex .journeyText h2 {
+  .journeyFlex .journeyText h2 {
     -ms-flex-item-align: center;
         align-self: center;
   }
@@ -1116,6 +1132,11 @@ form button {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 10px;
+    visibility: hidden;
+    z-index: 10;
+  }
+  .hamburger {
+    z-index: 10;
   }
   .blogPageFlex aside {
     -webkit-box-orient: vertical;
